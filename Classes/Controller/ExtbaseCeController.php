@@ -80,9 +80,8 @@ class ExtbaseCeController extends ActionController
         $this->cObj = $this->request->getAttributes()['currentContentObject'];
         $data = $this->cObj->data;
 
-        // this is only for data mapping
-        // the raw data are already available in $data
-        $extbaseCe = $this->extbaseCeRepository->findByUid($data['uid']);
+        // is mapping only without query
+        $extbaseCe = $this->extbaseCeRepository->mapRow($data);
 
         $this->resolveSlug($extbaseCe, $extbaseCe->getHeaderLink(), 'headerLink');
 
