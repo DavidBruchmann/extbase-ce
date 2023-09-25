@@ -1,0 +1,48 @@
+{
+    "name": "wdb/extbase-ce",
+    "type": "typo3-cms-extension",
+    "description": "Extbase Content Element which is using data of the table tt_content only.",
+    "license": ["GPL-3.0-or-later"],
+    "keywords": ["TYPO3 CMS", "Extension", "Extbase", "Content Element"],
+    "authors": [
+        {
+            "name": "David Bruchmann",
+            "email": "david.bruchmann@gmail.com",
+            "homepage": "https://github.com/DavidBruchmann",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/DavidBruchmann/extbase-ce/issues",
+        "source": "https://github.com/DavidBruchmann/extbase-ce"
+    },
+    "funding": [
+        {
+            "type": "PayPal",
+            "url": "https://paypal.me/SophieBarlian/",
+            "receiver": "ch19barlian@gmail.com"
+        },
+        {
+            "type": "Wise",
+            "url": "https://wise.com/",
+            "receiver": "ch19barlian@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/DavidBruchmann",
+    "require": {
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-extbase": "^12.4",
+        "typo3/cms-fluid-styled-content": "^12.4",
+        "typo3/cms-rte-ckeditor": "^12.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "WDB\\ExtbaseCe\\": "Classes/"
+        }
+    },
+    "extra": {
+      "typo3/cms": {
+         "extension-key": "extbase_ce"
+      }
+    }
+}

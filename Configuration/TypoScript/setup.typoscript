@@ -1,0 +1,27 @@
+plugin.tx_extbasece_extbasece {
+    view {
+        templateRootPaths.0 = EXT:extbase_ce/Resources/Private/Templates/ContentElements/ExtbaseCe/
+        templateRootPaths.1 = {$plugin.tx_extbasece_extbasece.view.templateRootPath}
+        partialRootPaths.0 = EXT:extbase_ce/Resources/Private/Partials/ContentElements/ExtbaseCe/
+        partialRootPaths.1 = {$plugin.tx_extbasece_extbasece.view.partialRootPath}
+        layoutRootPaths.0 = EXT:extbase_ce/Resources/Private/Layouts/ContentElements/ExtbaseCe/
+        layoutRootPaths.1 = {$plugin.tx_extbasece_extbasece.view.layoutRootPath}
+    }
+    # persistence {
+    #   storagePid = {$plugin.tx_extbasece_extbasece.persistence.storagePid}
+    #   #recursive = 1
+    # }
+    features {
+        # skipDefaultArguments = 1
+
+        ## if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    # mvc {
+    #    #callDefaultActionIfActionCantBeResolved = 1
+    # }
+}
+
+lib.contentElement.layoutRootPaths.30 = EXT:extbase_ce/Resources/Private/Layouts/ContentElements/
+# lib.contentElement.partialRootPaths.30 = EXT:extbase_ce/Resources/Private/Partials/ContentElements/
+# lib.contentElement.templateRootPaths.30 = EXT:extbase_ce/Resources/Private/Templates/ContentElements/

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-09-22UTC19:23:000">
+        <header>
+            <authorName>David Bruchmann</authorName>
+            <authorEmail>david.bruchmann@gmail.com</authorEmail>
+        </header>
+        <body>
+
+			<trans-unit id="tx_extbasece_domain_model_extbasece" resname="tx_extbasece_domain_model_extbasece">
+				<source>Extbase Content Element</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.description" resname="tx_extbasece_domain_model_extbasece.description">
+				<source>Extbase Content Element</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.header" resname="tx_extbasece_domain_model_extbasece.header">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.header.description" resname="tx_extbasece_domain_model_extbasece.header.description">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.subheader" resname="tx_extbasece_domain_model_extbasece.subheader">
+				<source>Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.subheader.description" resname="tx_extbasece_domain_model_extbasece.subheader.description">
+				<source>Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.bodytext" resname="tx_extbasece_domain_model_extbasece.bodytext">
+				<source>Bodytext</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.bodytext.description" resname="tx_extbasece_domain_model_extbasece.bodytext.description">
+				<source>Bodytext</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.image" resname="tx_extbasece_domain_model_extbasece.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.image.description" resname="tx_extbasece_domain_model_extbasece.image.description">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.date" resname="tx_extbasece_domain_model_extbasece.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.date.description" resname="tx_extbasece_domain_model_extbasece.date.description">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.header_link" resname="tx_extbasece_domain_model_extbasece.header_link">
+				<source>Header Link</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.header_link.description" resname="tx_extbasece_domain_model_extbasece.header_link.description">
+				<source>Header Link</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.layout" resname="tx_extbasece_domain_model_extbasece.layout">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasece_domain_model_extbasece.layout.description" resname="tx_extbasece_domain_model_extbasece.layout.description">
+				<source>Layout</source>
+			</trans-unit>
+
+        </body>
+    </file>
+</xliff>

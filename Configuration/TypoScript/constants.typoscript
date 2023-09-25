@@ -1,0 +1,14 @@
+plugin.tx_extbasece_extbasece {
+    view {
+        # cat=plugin.tx_extbasece_extbasece/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:extbase_ce/Resources/Private/Templates/ContentElements/ExtbaseCe/
+        # cat=plugin.tx_extbasece_extbasece/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:extbase_ce/Resources/Private/Partials/ContentElements/ExtbaseCe/
+        # cat=plugin.tx_extbasece_extbasece/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:extbase_ce/Resources/Private/Layouts/ContentElements/ExtbaseCe/
+    }
+    # persistence {
+    #    # cat=plugin.tx_extbasece_extbasece//a; type=string; label=Default storage PID
+    #    storagePid =
+    # }
+}

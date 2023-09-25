@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+
+  <div class="tx-extbasece-title">
+    <h2><f:link.typolink parameter="{extbaseCe.headerLink}">{extbaseCe.header}</f:link.typolink></h2>
+    <f:if condition="{extbaseCe.subheader}">
+      <div class="tx-extbasece-subtitle">
+        <h3><f:link.typolink parameter="{extbaseCe.headerLink}">{extbaseCe.subheader}</f:link.typolink></h3>
+      </div>
+    </f:if>
+  </div>
+  <f:if condition="{extbaseCe.date}">
+    <div class="tx-extbasece-date">
+      <p>Updated <f:format.date format="m/d/Y">{extbaseCe.date}</f:format.date></p>
+    </div>
+  </f:if>
+  <f:if condition="{extbaseCe.image}">
+    <div class="tx-extbasece-image">
+      <f:link.typolink parameter="{extbaseCe.headerLink}"><f:image image="{extbaseCe.image}" /></f:link.typolink>
+    </div>
+  </f:if>
+  <f:if condition="{extbaseCe.bodytext}">
+    <div class="tx-extbasece-text">
+      <f:format.html>{extbaseCe.bodytext}</f:format.html>
+    </div>
+  </f:if>
+
+</f:section>
+
+</html>
