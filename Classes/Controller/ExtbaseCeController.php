@@ -43,13 +43,6 @@ class ExtbaseCeController extends ActionController
     protected $pageRepository = null;
 
     /**
-     * Reference to the parent (calling) cObject set from TypoScript
-     *
-     * @var ContentObjectRenderer
-     */
-    protected $cObj = null;
-
-    /**
      * @param ExtbaseCeRepository $extbaseCeRepository
      */
     public function injectExtbaseCeRepository(ExtbaseCeRepository $extbaseCeRepository)
@@ -65,11 +58,6 @@ class ExtbaseCeController extends ActionController
         $this->pageRepository = $pageRepository;
     }
 
-    public function setContentObjectRenderer(ContentObjectRenderer $cObj): void
-    {
-      $this->cObj = $cObj ?? GeneralUtility::makeInstance(ContentObjectRenderer::class);
-    }
-
     /**
      * action render
      *
@@ -77,8 +65,8 @@ class ExtbaseCeController extends ActionController
      */
     public function renderAction(): \Psr\Http\Message\ResponseInterface
     {
-        $this->cObj = $this->request->getAttributes()['currentContentObject'];
-        $data = $this->cObj->data;
+        $cObj = $this->request->getAttributes()['currentContentObject'];
+        $data = $cObj->data;
 
         // is mapping only without query
         $extbaseCe = $this->extbaseCeRepository->mapRow($data);
