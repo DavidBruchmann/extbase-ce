@@ -37,7 +37,7 @@ class ExtbaseCeRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
      */
     public function mapRow(array $row): ExtbaseCe
     {
-        $object = $this->DataMapper->map(ExtbaseCe::class, [$row]);
-        return $object[0];
+        $objectArray = $this->DataMapper->map(ExtbaseCe::class, [$row]);
+        return $objectArray[0];
     }
 }
