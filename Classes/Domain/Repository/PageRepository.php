@@ -20,19 +20,19 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class PageRepository
 {
 
-    public function getPageUidBySlug($slug, $trimmed=0)
+    public function getPageUidBySlug($slug, $trimmed=0): int
     {
         $row = GeneralUtility::makeInstance(ConnectionPool::class)
             ->getConnectionForTable('pages')
             ->select(
                 ['uid'], // fields to select
                 'pages', // from
-                [ 'slug' => (string)$slug ] // where
+                ['slug' => (string)$slug] // where
             )
             ->fetch();
         if (!$row && $trimmed===0) {
             return $this->getPageUidBySlug(rtrim($slug, '/'), $trimmed=1);
         }
-        return $row;
+        return $row ? $row['uid'] : 0;
     }
 }

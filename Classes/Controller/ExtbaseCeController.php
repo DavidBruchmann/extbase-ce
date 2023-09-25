@@ -87,10 +87,10 @@ class ExtbaseCeController extends ActionController
     protected function resolveSlug(AbstractEntity $modelObject, string $link, string $property): void
     {         
         if (strpos($link, '/') === 0) {
-            $page = $this->pageRepository->getPageUidBySlug($link);
+            $pageUid = $this->pageRepository->getPageUidBySlug($link);
             $method = 'set' . ucfirst($property);
-            if (!empty($page['uid']) && method_exists($modelObject, $method)) {
-                $modelObject->$method('t3://page?uid=' . $page['uid']);
+            if (!empty($pageUid) && method_exists($modelObject, $method)) {
+                $modelObject->$method('t3://page?uid=' . $pageUid);
             }
         }
     }
